@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Adopt a friend</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+            .verticalNavBar{
+                position: fixed;
+                width: 200px;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: cursive;
+                overflow: auto;
+                background-color: cornflowerblue;
+            }
+
+            .verticalNavBar a.active{
+                background-color: black;
+                color: white;
+            }
+
+            .verticalNavBar a {
+
+                color: black;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+
+            .verticalNavBar a:hover {
+                color: white;
+            }
+
+            .content{
+                background-color: lightblue;
+                margin-left: 205px;
+                margin-top: 5px;
+                padding: 5px;
+                overflow-x: hidden;
+                font-family: cursive;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="verticalNavBar">
+            <a href = "/" >
+                <img src = "Adopt-a-friend.jpg"
+                alt = "Adopt a friend logo"
+                width="100" height="100">
+            </a>
+            <a href="/">Home page</a>
+            <a href="/findDogCat">Find a dog/cat</a>
+            <a href="/dogCare">Dog care</a>
+            <a href="/catCare" class="active">Cat care</a>
+            <a href="/createAccount">Create an account</a>
+            <a href="/petGiveAway">Have a pet to give away</a>
+            <a href="/contactUs">Contact us</a>
+            <a href="/logOut">Log out</a>
+        </div>
+
+        <%- include('../templates/header.ejs') %>
+
+        <div class="content">
+            <h1>Tips for taking care of a cat</h1>
+            <p>
+                There's nothing more exciting than bringing a new kitten home, 
+                but it's essential to know how to take care of your feline friend to
+                ensure they live a long and healthy life filled with memorable moments. 
+                Cat care involves providing security, comfort, and love, 
+                which includes proper nutrition, clean water, 
+                a comfortable sleeping place, and regular grooming
+            </p>
+            <p>
+                Here are seven important things to know before getting a cat to meet all their needs:
+            </p>
+            <ul>
+                <li>Proper feeding and hydration</li>
+                <li>Regular grooming</li>
+                <li>Proper housing</li>
+                <li>Litter box maintenance</li>
+                <li>Scratching needs</li>
+                <li>Spaying and neutering</li>
+                <li>Maintaning a healthy weight</li>
+            </ul>
+            <p>Thanks to BetterVet for providing us with information on how to take care of our cat</p>
+            <p>
+                <a href="https://bettervet.com/resources/pet-health-care/how-to-take-care-of-a-cat">https://bettervet.com/resources/pet-health-care/how-to-take-care-of-a-cat</a>
+            </p>
+        </div>
+
+        <%- include('../templates/footer.ejs') %>
+
+        <script src="/public/script.js"></script>
+    </body>
+</html>

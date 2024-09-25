@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Adopt a friend</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+
+            .verticalNavBar{
+                position: fixed;
+                width: 200px;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: cursive;
+                overflow: auto;
+                background-color: cornflowerblue;
+            }
+
+            .verticalNavBar a.active{
+                background-color: black;
+                color: white;
+            }
+
+            .verticalNavBar a {
+
+                color: black;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+
+            .verticalNavBar a:hover {
+                color: white;
+            }
+
+            .content{
+                background-color: lightblue;
+                margin-left: 205px;
+                margin-top: 5px;
+                padding: 5px;
+                overflow-x: hidden;
+                font-family: cursive;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="verticalNavBar">
+            <a href = "/" >
+                <img src = "Adopt-a-friend.jpg"
+                alt = "Adopt a friend logo"
+                width="100" height="100">
+            </a>
+            <a href="/">Home page</a>
+            <a href="/findDogCat">Find a dog/cat</a>
+            <a href="/dogCare">Dog care</a>
+            <a href="/catCare">Cat care</a>
+            <a href="/createAccount">Create an account</a>
+            <a href="/petGiveAway">Have a pet to give away</a>
+            <a href="/contactUs" class="active">Contact us</a>
+            <a href="/logOut">Log out</a>
+        </div>
+        
+        <%- include('../templates/header.ejs') %>
+
+        <div class="content">
+            <h1>You can reach us here</h1>
+            <p> Website creator: Abdulah Ghulam Ali</p>
+            <p> Id: 40281857</p>
+            <p> Personal E-mail: abdulah.ghulamali@gmail.com</p>
+            <p> School E-mail: ab_ghula@live.concordia.ca</p>
+        </div>
+
+        <%- include('../templates/footer.ejs') %>
+
+        <script src="/public/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Adopt a friend</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0;
+                overflow-x: hidden;
+            }
+        
+
+            .verticalNavBar{
+                position: fixed;
+                width: 200px;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: cursive;
+                overflow: auto;
+                background-color: cornflowerblue;
+            }
+
+            .verticalNavBar a.active{
+                background-color: black;
+                color: white;
+            }
+
+            .verticalNavBar a {
+
+                color: black;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+
+            .verticalNavBar a:hover {
+                color: white;
+            }
+
+            .content{
+                background-color: lightblue;
+                margin-left: 205px;
+                margin-top: 5px;
+                padding: 5px;
+                overflow-x: hidden;
+                font-family: cursive;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="verticalNavBar">
+            <a href = "/" >
+                <img src = "Adopt-a-friend.jpg"
+                alt = "Adopt a friend logo"
+                width="100" height="100">
+            </a>
+            <a href="/">Home page</a>
+            <a href="/findDogCat">Find a dog/cat</a>
+            <a href="/dogCare" class="active">Dog care</a>
+            <a href="/catCare">Cat care</a>
+            <a href="/createAccount">Create an account</a>
+            <a href="/petGiveAway">Have a pet to give away</a>
+            <a href="/contactUs">Contact us</a>
+            <a href="/logOut">Log out</a>
+        </div>
+
+        <%- include('../templates/header.ejs') %>
+
+        <div class="content">
+            <h1>Tips for taking care of a dog</h1>
+            <p>
+                Having a pet sounds interesting and fun. 
+                But, adopting a pet and taking care of them is a big responsibility. 
+                Here are some of the tips which will help you to take good care of your pet and keep them happy, active and healthy:
+            </p>
+            <ul>
+                <li>Feed your pet good and high-quality foods</li>
+                <li>Take them for a walk every day for at least half an hour</li>
+                <li>Provide them with the needed vaccination on time</li>
+                <li>Keep a clean and hygienic environment for them</li>
+                <li>Visit Vet on a weekly/monthly basis</li>
+                <li>Engage and do not leave them alone for a long time</li>
+                <li>Provide them with a good and comfortable shelter</li>
+                <li>Keep them away from dust and allergies</li>
+                <li>Love them unconditionally, treat them like your family, talk to them</li>
+            </ul>
+            <p>Thanks to tutorialspoint for providing us with information on how to take care of our dog</p>
+            <p>
+                <a href="https://www.tutorialspoint.com/how-to-take-care-of-pets-at-home">https://www.tutorialspoint.com/how-to-take-care-of-pets-at-home</a>
+            </p>
+        </div>
+
+        <%- include('../templates/footer.ejs') %>
+
+        <script src="/public/script.js"></script>
+    </body>
+</html>
